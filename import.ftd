@@ -32,8 +32,6 @@ lang: ftd
 
 After importing fastn button inside `ftd` file, use it as shown below:
 
-Showing a sample usage:
-
 -- cb.code:
 lang: ftd
 

@@ -202,23 +202,23 @@ Below are details of all common properties of basic button.
 -- ds.component-property: `title`
 type: Caption (`required`)
 
-It's used to add title to all your button.
+It's used to add title to button.
 
 -- ds.component-property: `variant`
 type: String (`required`)
 
-It's used to define variant of button. There are three(3) button variants:
+It's used to define variant of the button. There are three(3) button variants:
 
-- text - button appears as a text, and on mouse over background color is shown.
+- `text` - button appears as a text, and on mouse over background color is shown.
 
-- contained - button appears as a contained button, with background color
+- `contained` - button appears as a contained button, with background color
   `$inherited.colors.cta-primary.base`.
 
-- outlined - button outlined with `$inherited.colors.cta-primary.border`.
+- `outlined` - button outlined with `$inherited.colors.cta-primary.border`.
 
 -- ds.header: Additional Properties:
 
-Below are details of additional properties of quote components.
+Below are details of additional properties of fastn-button.
 
 -- ds.component-property: `link`
 type: String (`optional`)

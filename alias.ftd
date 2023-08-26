@@ -11,8 +11,8 @@ document-image: https://raw.githubusercontent.com/gsalunke/fastn-button/main/.gi
 -- ds.header: Using as `btn` alias inside `FASTN.ftd`
 
 If you're using fastn buttons on all `ftd` files of a fastn project, then don't
-import it inside every `ftd` file, just add `fastn alias` to fastn button
-dependency and auto import it, inside `FASTN.ftd` file.
+import it inside every `ftd` file. Rather add `fastn alias` to fastn button
+dependency and auto import it inside `FASTN.ftd` file.
 
 To create a fastn `btn` alias inside `FASTN.ftd` add its dependency inside
 `FASTN.ftd` file and `auto-import` it:

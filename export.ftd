@@ -1,0 +1,71 @@
+-- $ds.copyright-info: Copyright © 2023 - Ganesh S Salunke
+
+-- ds.doc-home: Button
+site-title: Challenge 1: Button
+github-url: https://github.com/gsalunke/fastn-button
+current-package: gsalunke.github.io/fastn-button
+license-url: gsalunke.github.io/fastn-button
+document-title: fastn button for fastn websites. Use contained, outlined and text button created by gsalunke
+document-description: Simple, easy-to-use fastn buttons inspired by material-ui, mui. Change colours and typography effortlessly.
+document-image: https://raw.githubusercontent.com/gsalunke/fastn-button/main/.github/assets/fastn-button.png
+
+-- ds.header: Export `button` inside `ds.ftd` document
+
+If you're using fastn buttons on all `ftd` files of a fastn project, then don't
+import it inside every `ftd` file, just export it to `FASTN/ds.ftd`. For more
+information export check out how fastn created their 
+[fastn.com - website](https://github.com/fastn-stack/fastn.com/blob/main/FASTN/ds.ftd)
+
+To use as export create fastn projects using their [fastn-template](https://github.com/fastn-stack/fastn-template)
+which have ready to use `FASTN/ds.ftd` document.
+
+If fastn project is created using `FASTN/<filename>.ftd` document, then its just
+a one line import of fastn button and export it. Fastn button will be available
+using `-- ds.button:` via `FASTN/ds.ftd` document [see this code](https://github.com/fastn-stack/fastn.com/blob/417d900d787ede5081893790b7af729056eba3da/FASTN/ds.ftd#L9).
+
+To create a fastn export alias add fastn button dependency inside `FASTN.ftd`:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: gsalunke.github.io/fastn-button
+
+-- ds.header: Exporting `fastn-button`
+
+Import `fastn-button` inside `FASTN/ds.ftd` document:
+
+-- cb.code:
+lang: ftd
+
+\-- import: gsalunke.github.io/fastn-button
+export: button
+
+-- ds.header: How to use btn exported from `FASTN/ds.ftd` document
+
+Once fastn-button is added inside `FASTN/ds.ftd` check whether `ds` alias is
+present inside `FASTN.ftd`, like [this example](https://github.com/fastn-stack/fastn.com/blob/417d900d787ede5081893790b7af729056eba3da/FASTN.ftd#L30)
+
+If `ds` alias is present, which is always present when [fastn-template](https://github.com/fastn-stack/fastn-template)
+is used to create fastn projects.
+
+Below example usage showing usage of `fastn-button` using `ds.btn` export alias
+
+-- cb.code:
+lang: ftd
+
+\-- ds.button: TEXT
+variant: text
+link: index.html
+size: large
+
+\-- ds.button: Contained
+variant: contained
+link: index.html
+size: large
+
+\-- ds.button: Outlined
+variant: outlined
+link: index.html
+size: large
+
+-- end: ds.doc-home

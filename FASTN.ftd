@@ -20,3 +20,6 @@ favicon: /-/gsalunke.github.io/fastn-button/favicon.ico
   - With export(recommonded): /export/
   - As `btn` alias: /alias/
   - Via import: /import/
+
+# MIT LICENSE
+url: https://github.com/gsalunke/fastn-button/blob/main/LICENSE
